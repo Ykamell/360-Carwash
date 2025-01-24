@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <Navbar className='header' expand="lg" sticky="top">
       <Container>
-        <Navbar.Brand href="#home">360 CARWASH (LOGO)</Navbar.Brand>
+        <Navbar.Brand href="#home">360 CARWASH</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">

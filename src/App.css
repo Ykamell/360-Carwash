@@ -1,0 +1,294 @@
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  background: rgb(250,243,228);
+  color: #243c28 !important;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: #243c28 !important;
+  text-decoration: none;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* About */
+.about {
+  padding: 50px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.about img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Contact */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background: #004d40;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.home-banner {
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home-banner::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  background: rgba(0, 0, 0, 0.3); /* Oscurece con transparencia */
+  z-index: 1; /* Coloca la capa encima del fondo */
+}
+
+/* .carousel-image-with-overlay {
+  display: inline-block; 
+  width: 100%; 
+  height: auto;
+  background: rgba(0, 0, 0, 0.3); 
+  overflow: hidden;
+}
+
+.carousel-image-with-overlay img {
+  display: block;
+  width: 100%;
+  mix-blend-mode: multiply; 
+} */
+
+.home-banner-text {
+  z-index: 2;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.home-banner-title{
+  font-family: "Inter", serif;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.home-banner-btn {
+  border-radius: 0;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  font-weight: 500;
+}
+
+.home-banner-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Contenedor general de la sección */
+.services-section {
+  background: rgb(250,243,228);
+  background: linear-gradient(180deg, rgba(250,243,228,1) 0%, rgba(250,243,228,1) 25%, rgba(115,171,108,1) 25%, rgba(115,171,108,1) 100%);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Contenedor de las tarjetas */
+.services-container {
+  position: relative;
+  margin: -80px auto 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 2 !important;
+}
+
+/* Tarjetas individuales */
+.service-card:first-of-type {
+  border-top-left-radius: 5%; 
+  border-bottom-left-radius: 5%; 
+}
+
+.service-card:last-of-type {
+  border-top-right-radius: 5%; /* Bordes redondeados */
+  border-bottom-right-radius: 5%; /* Bordes redondeados */
+}
+
+.service-card {
+  background-color: #004d40; /* Verde oscuro */
+  color: white;
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.service-card:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  top: 10%; /* Empieza desde el 10% para que tenga una altura del 80% */
+  right: 0;
+  width: 1px; /* Ancho de la línea */
+  height: 80%; /* Altura de la línea */
+  background-color: rgba(255, 255, 255, 0.295); /* Color de la línea */
+}
+
+/* Estilo del ícono circular */
+.service-icon {
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 59%, rgba(0,0,0,1) 60%, rgba(0,0,0,1) 61%, rgba(66,162,0,1) 62%, rgba(66,162,0,1) 100%);  height: 120px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: -60px auto 15px; /* Posiciona el ícono hacia arriba */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px; /* Tamaño del ícono */
+  color: #004d40; /* Color del ícono */
+}
+
+/* Título de cada tarjeta */
+.service-title {
+  font-family: 'Montserrat', serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+/* Descripción de cada servicio */
+.service-description {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Botón de cada tarjeta */
+.service-button {
+  background-color: #2e7d32; /* Verde para botones */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px; /* Bordes redondeados en botones */
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.service-button:hover {
+  background-color: #1b5e20; /* Verde más oscuro en hover */
+}
+
+.address {
+  flex-direction: row;
+  padding: 5% 0;
+}
+
+.map-address {
+  border: 2px solid green;
+}

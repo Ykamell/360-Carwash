@@ -18,50 +18,6 @@ const Hero = () => {
         </Container>
       </div>
 
-    {/* <Carousel>
-      <Carousel.Item>
-        <div className="carousel-image-with-overlay">
-          <img
-            className="d-block w-100"
-            src={CarWashImg}
-            alt="First slide"
-          />
-        </div>
-        <Carousel.Caption>
-          <h2>Caring for Your Car Like Our Own</h2>
-          <p>Reliable services to keep your vehicle in top condition.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <div className="carousel-image-with-overlay">
-          <img
-            className="d-block w-100"
-            src={CarWashImg}
-            alt="Second slide"
-          />
-        </div>
-        <Carousel.Caption>
-          <h2>Second slide label</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <div className="carousel-image-with-overlay">
-          <img
-            className="d-block w-100"
-            src={CarWashImg}
-            alt="Third slide"
-          />
-        </div>
-        <Carousel.Caption>
-          <h2>Third slide label</h2>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel> */}
-
     </>
   );
 };

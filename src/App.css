@@ -559,6 +559,20 @@ body {
   }
 }
 
+@media screen and (max-width:990px){
+  .custom-dropdown-menu {
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+  }
+  .custom-dropdown-item {
+    gap: 5px;
+  }
+  .custom-dropdown .dropdown-menu {
+    transform: translateX(0);
+  }
+}
+
 @media screen and (max-width: 900px) {
   .home-banner-text {
     font-size: 1.5rem;
